@@ -9,10 +9,10 @@ const stixTwoText = STIX_Two_Text({
 });
 
 interface LoadingPageProps {
-  onEnter: () => void; // Keep prop for potential future use, but won't call it now
+  // onEnter: () => void; // Removed unused prop
 }
 
-const LoadingPage: React.FC<LoadingPageProps> = ({ onEnter }) => {
+const LoadingPage: React.FC<LoadingPageProps> = (/* Removed { onEnter } */) => {
   // Add state for message visibility
   const [showMessage, setShowMessage] = useState(false);
 
