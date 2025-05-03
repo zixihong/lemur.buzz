@@ -8,11 +8,7 @@ const stixTwoText = STIX_Two_Text({
   style: ['normal', 'italic'],    // Include styles if needed
 });
 
-interface LoadingPageProps {
-  // onEnter: () => void; // Removed unused prop
-}
-
-const LoadingPage: React.FC<LoadingPageProps> = (/* Removed { onEnter } */) => {
+const LoadingPage: React.FC = () => {
   // Add state for message visibility
   const [showMessage, setShowMessage] = useState(false);
 
