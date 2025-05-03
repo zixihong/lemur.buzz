@@ -50,7 +50,6 @@ const LoadingPage: React.FC = () => {
         </p>
       </div>
 
-      {/* Button Alignment Wrapper (Outside poem box) - Reverted to consistent max-w-lg */}
       <div className="w-full max-w-lg flex justify-end pr-4"> 
         {/* Inner Container - Removed relative positioning */}
         <div className={`${stixTwoText.className} flex items-center space-x-2 sm:space-x-3`}> 
