@@ -8,13 +8,17 @@ const stixTwoText = STIX_Two_Text({
   style: ['normal', 'italic'],    // Include styles if needed
 });
 
-const LoadingPage: React.FC = () => {
+interface LoadingPageProps {
+  onEnter: () => void;
+}
+
+const LoadingPage: React.FC<LoadingPageProps> = ({ onEnter }) => {
   // Add state for message visibility
   const [showMessage, setShowMessage] = useState(false);
 
   const handleButtonClick = () => {
     setShowMessage(true);
-    // We are not calling onEnter() here anymore
+    onEnter(); // Call the onEnter function to navigate
   };
 
   return (
